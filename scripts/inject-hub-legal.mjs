@@ -67,13 +67,28 @@ function injectLegal(text) {
 function injectGtag(text) {
   if (text.includes(GA_ID) && text.includes("gtag/js")) return text;
   const lower = text.toLowerCase();
-  const idx = lower.lastIndexOf("</head>");
+  let idx = lower.lastIndexOf("</head>");
   if (idx !== -1) return text.slice(0, idx) + GTAG + "\n" + text.slice(idx);
+  // Some minifiers (Parcel htmlnano) drop </head> and even <head>.
+  const body = lower.search(/<body[\s>]/);
+  if (body !== -1) return text.slice(0, body) + GTAG + "\n" + text.slice(body);
+  return text;
+}
+
+const RJS = '<script src="https://ref.web-free.site/r.js" defer></script>';
+
+function injectRjs(text) {
+  if (text.includes("ref.web-free.site/r.js")) return text;
+  const lower = text.toLowerCase();
+  let idx = lower.lastIndexOf("</head>");
+  if (idx !== -1) return text.slice(0, idx) + RJS + "\n" + text.slice(idx);
+  const body = lower.search(/<body[\s>]/);
+  if (body !== -1) return text.slice(0, body) + RJS + "\n" + text.slice(body);
   return text;
 }
 
 function inject(text) {
-  return injectGtag(injectLegal(text));
+  return injectRjs(injectGtag(injectLegal(text)));
 }
 
 function wranglerAssetDir() {
