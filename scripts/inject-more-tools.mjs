@@ -59,7 +59,17 @@ const BLOCK = `
       <li><a href="${r('https://free-image-upscaler.web-free.site/')}">Free Image Upscaler</a></li>
       <li><a href="${r('https://free-passport-photo-maker.web-free.site/')}">Free Passport Photo Maker</a></li>
       <li><a href="${r('https://free-png-to-svg.web-free.site/')}">Free PNG to SVG Converter</a></li>
-    </ul></div>
+    
+              <li><a href="${r('https://free-meme-generator.web-free.site/')}">Free Meme Generator</a></li>
+            
+              <li><a href="${r('https://free-color-picker.web-free.site/')}">Free Color Picker</a></li>
+            
+              <li><a href="${r('https://free-gif-maker.web-free.site/')}">Free GIF Maker</a></li>
+            
+              <li><a href="${r('https://free-photo-editor.web-free.site/')}">Free Photo Editor</a></li>
+            
+              <li><a href="${r('https://free-logo-maker.web-free.site/')}">Free Logo Maker</a></li>
+            </ul></div>
     <div class="wf-mt-cat"><h3>Calculators &amp; currency</h3><ul>
       <li><a href="${r('https://free-online-calculator.web-free.site/')}">Free Online Calculator</a></li>
       <li><a href="${r('https://free-currency-converter.web-free.site/')}">Free Currency Converter</a></li>
@@ -77,7 +87,9 @@ const BLOCK = `
       <li><a href="${r('https://free-text-to-speech.web-free.site/')}">Free Text to Speech</a></li>
       <li><a href="${r('https://free-speech-to-text.web-free.site/')}">Free Speech to Text</a></li>
       <li><a href="${r('https://free-diff-checker.web-free.site/')}">Free Diff Checker</a></li>
-    </ul></div>
+    
+              <li><a href="${r('https://free-citation-generator.web-free.site/')}">Free Citation Generator</a></li>
+            </ul></div>
     <div class="wf-mt-cat"><h3>Audio &amp; video</h3><ul>
       <li><a href="${r('https://free-video-to-mp3.web-free.site/')}">Free Video to MP3 Converter</a></li>
       <li><a href="${r('https://free-mp3-cutter.web-free.site/')}">Free MP3 Cutter</a></li>
@@ -85,7 +97,9 @@ const BLOCK = `
       <li><strong>Free Video Compressor</strong></li>
       <li><a href="${r('https://free-video-to-gif.web-free.site/')}">Free Video to GIF Converter</a></li>
       <li><a href="${r('https://free-audio-converter.web-free.site/')}">Free Audio Converter</a></li>
-    </ul></div>
+    
+              <li><a href="${r('https://free-video-converter.web-free.site/')}">Free Video Converter</a></li>
+            </ul></div>
     <div class="wf-mt-cat"><h3>Files</h3><ul>
       <li><a href="${r('https://free-zip-tool.web-free.site/')}">Free ZIP Tool</a></li>
     </ul></div>
@@ -95,7 +109,7 @@ const BLOCK = `
     </ul></div>
     <div class="wf-mt-cat"><h3>Security &amp; passwords</h3><ul>
       <li><a href="${r('https://free-password-generator.web-free.site/')}">Free Password Generator</a></li>
-    </ul></div>
+    </ul></div><div class="wf-mt-cat"><h3>Time</h3><ul><li><a href="${r('https://free-time-zone-converter.web-free.site/')}">Free Time Zone Converter</a></li></ul></div><div class="wf-mt-cat"><h3>Drawing</h3><ul><li><a href="${r('https://free-whiteboard.web-free.site/')}">Free Whiteboard</a></li></ul></div><div class="wf-mt-cat"><h3>Random &amp; pickers</h3><ul><li><a href="${r('https://free-spin-wheel.web-free.site/')}">Free Spin Wheel</a></li></ul></div>
   </div>
 </aside>
 `;
