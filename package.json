@@ -1,0 +1,33 @@
+{
+  "name": "free-video-compressor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prerender-seo.mjs && node scripts/generate-sitemap.mjs && node scripts/inject-more-tools.mjs",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "lint": "prettier -c ."
+  },
+  "dependencies": {
+    "mp4-muxer": "^5.1.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.49.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.6",
+    "wrangler": "^3.94.0"
+  }
+}

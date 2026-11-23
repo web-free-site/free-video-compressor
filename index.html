@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Video Compressor — Shrink video files in your browser</title>
+    <meta
+      name="description"
+      content="Compress MP4, MOV, WebM, and MKV videos to a target file size. WhatsApp, Discord, and email presets. 100% in your browser — no upload."
+    />
+    <link rel="canonical" href="https://free-video-compressor.web-free.site/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://free-video-compressor.web-free.site/" />
+    <meta property="og:title" content="Free Video Compressor" />
+    <meta
+      property="og:description"
+      content="Compress videos to a target size with presets for WhatsApp, Discord, and email. Client-side only."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Free Video Compressor",
+        "url": "https://free-video-compressor.web-free.site/",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web browser",
+        "description": "Compress local video files to a target size in the browser without uploading.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "inLanguage": "en"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is my video uploaded to a server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Compression runs entirely in your browser on your device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What formats can I compress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common containers including MP4, MOV, WebM, and MKV are supported when your browser can decode them."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

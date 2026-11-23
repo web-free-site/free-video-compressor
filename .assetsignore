@@ -1,0 +1,11 @@
+AGENT_BRIEF.md
+wrangler.toml
+package.json
+package-lock.json
+.git/
+node_modules/
+src/
+scripts/
+vite.config.ts
+tsconfig.json
+.env*
