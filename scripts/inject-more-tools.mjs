@@ -71,7 +71,7 @@ const BLOCK = `
               <li><a href="${r('https://free-logo-maker.web-free.site/')}">Free Logo Maker</a></li>
             </ul></div>
     <div class="wf-mt-cat"><h3>Calculators &amp; currency</h3><ul>
-      <li><a href="${r('https://free-online-calculator.web-free.site/')}">Free Online Calculator</a></li>
+      <li><a href="${r('https://free-online-calculator.web-free.site/en/')}">Free Online Calculator</a></li>
       <li><a href="${r('https://free-currency-converter.web-free.site/')}">Free Currency Converter</a></li>
       <li><a href="${r('https://free-unit-converter.web-free.site/')}">Free Unit Converter</a></li>
       <li><a href="${r('https://free-loan-calculator.web-free.site/')}">Free Loan Calculator</a></li>
