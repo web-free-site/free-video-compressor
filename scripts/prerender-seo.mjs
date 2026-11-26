@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { buildFaqJsonLd, buildHomeSeoStaticHtml } from './home-seo-content.mjs';
 
 const HOST = 'https://free-video-compressor.web-free.site';
 const dist = path.resolve('dist');
@@ -93,4 +94,21 @@ for (const page of pages) {
   fs.writeFileSync(path.join(dir, 'index.html'), buildPage(page));
 }
 
+const homeIndex = path.join(dist, 'index.html');
+let homeHtml = fs.readFileSync(homeIndex, 'utf8');
+const homeSeo = buildHomeSeoStaticHtml();
+if (!homeHtml.includes('id="seo-home-static"')) {
+  homeHtml = homeHtml.replace(
+    '<div id="root"></div>',
+    `<div id="root"></div>\n${homeSeo}`,
+  );
+}
+const faqLd = JSON.stringify(buildFaqJsonLd(), null, 2).replace(/</g, '\\u003c');
+homeHtml = homeHtml.replace(
+  /<script type="application\/ld\+json">\s*\{\s*"@context": "https:\/\/schema\.org",\s*"@type": "FAQPage"[\s\S]*?<\/script>/,
+  `<script type="application/ld+json">\n${faqLd}\n    </script>`,
+);
+fs.writeFileSync(homeIndex, homeHtml);
+
 console.log('Prerendered', pages.length, 'SEO HTML shells into dist/');
+console.log('Injected homepage SEO block into dist/index.html');

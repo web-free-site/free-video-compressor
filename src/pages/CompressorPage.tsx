@@ -9,13 +9,15 @@ import {
 import { formatBytes } from '../utils/bitrate';
 import { AdSlot, SponsoredSmartlink, useAdScripts } from '../components/ads/AdSlot';
 import SiteFooter from '../components/SiteFooter';
+import HomeSeoSection from '../components/HomeSeoSection';
 import { usePageMeta } from '../seo/usePageMeta';
+import { HOME_H1 } from '../seo/homeSeoContent';
 
 const VIDEO_ACCEPT =
   'video/*,.mp4,.mov,.webm,.mkv,.m4v,.avi,.mpeg,.mpg,.ogv,.3gp';
 
 export default function CompressorPage({
-  title = 'Free Video Compressor',
+  title = HOME_H1,
   lead = 'Pick a local video, choose a platform preset or target size, and download a smaller MP4. Everything stays on your device.',
   initialPreset = 'custom' as PlatformPresetId,
   metaPath = '/',
@@ -383,6 +385,7 @@ export default function CompressorPage({
       )}
 
       <AdSlot slot="betweenToolContent728x90" className="container center-ad" />
+      {metaPath === '/' && <HomeSeoSection />}
       <AdSlot slot="content468x60" className="container center-ad mobile-only" />
       <AdSlot slot="content300x250" className="container center-ad" />
       <AdSlot slot="mobileSticky320x50" className="sticky-mobile-ad" />

@@ -45,18 +45,42 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Is my video uploaded to a server?",
+            "name": "Is this video compressor really free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Compression runs entirely in your browser on your device."
+              "text": "Yes. The tool is free to use with no subscription and no credit card. You can compress as many local files as your device and browser can handle in a single session."
             }
           },
           {
             "@type": "Question",
-            "name": "What formats can I compress?",
+            "name": "Do I need to create an account or sign up?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Common containers including MP4, MOV, WebM, and MKV are supported when your browser can decode them."
+              "text": "No account is required. Open the page, choose a video from your device, pick a preset or target size, and download the smaller MP4. There is no login step."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my video uploaded to your servers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Compression runs entirely in your web browser with WebCodecs. Your file is read from disk on your phone or computer, encoded locally, and never sent to our servers for processing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which video formats and file sizes are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can open common containers such as MP4, MOV, WebM, MKV, M4V, AVI, MPEG, OGV, and 3GP when your browser can decode them. Set any target between 1 MB and 500 MB, or use presets for WhatsApp (16 MB), Discord (10 MB), email (25 MB), and Messenger. Output is H.264 MP4 with optional AAC audio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this on my phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if your mobile browser supports WebCodecs (many recent Chromium-based Android browsers do). iOS Safari support varies; for large files, a desktop Chrome or Edge browser is often faster. The layout is responsive for small screens."
             }
           }
         ]
